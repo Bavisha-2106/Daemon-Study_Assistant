@@ -12,16 +12,17 @@ Daemon reads your lecture notes (PDFs), stores them in a vector database, and an
 4. The LLM answers strictly from those chunks and cites the source
 
 ## Features
-- 📚 Multi-PDF support
-- 🔍 Query rewriting for better retrieval
-- 📌 Source citation on every answer
-- 🛡️ Prompt injection resistant
+- Multi-PDF support
+- Query rewriting for better retrieval
+- Source citation on every answer
+- Prompt injection resistant
 
 ## Known Limitations
 - Retrieval can be inconsistent on vague follow-up queries
 - Knowledge leakage from base LLM on some responses
 - CLI only, no UI
 - Free tier Groq API limits daily token usage
+- No persistent chat history — each session starts fresh
 
 ## Setup
 1. Clone the repo
